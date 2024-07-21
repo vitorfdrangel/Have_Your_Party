@@ -1,0 +1,101 @@
+.form-page h2,
+.form-page p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-page p {
+  font-size: 1.2rem;
+  color: #7703fc;
+}
+
+.form-page form {
+  background-color: #fff;
+  max-width: 1000px;
+  margin: 0 auto 5rem;
+  padding: 2rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 12px;
+}
+
+.form-page label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #747990;
+  margin-bottom: 1rem;
+}
+
+.form-page input,
+.form-page textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  outline: none;
+}
+
+.form-page textarea {
+  height: 80px;
+  resize: none;
+}
+
+.form-page input::placeholder {
+  color: #a4a7b4;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.services-container .service {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.services-container .service img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.form-page .service {
+  max-width: 30%;
+  text-align: center;
+}
+
+.form-page .service p {
+  margin-bottom: 0;
+}
+
+.form-page .checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.form-page .checkbox-container p {
+  color: #747900;
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+}
+
+.form-page .service-name {
+  font-weight: bold;
+}
+
+.form-page .service-price {
+  color: #747990;
+}
+
+.form-page .btn {
+  max-width: 150px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
