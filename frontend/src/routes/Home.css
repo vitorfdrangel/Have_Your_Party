@@ -11,7 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
 }
 
 .parties-container p {
@@ -19,7 +19,7 @@
 }
 
 .parties-container .party {
-  max-width: 600px;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
@@ -28,6 +28,7 @@
 
 .parties-container .party img {
   width: 100%;
+  height: 300px;
 }
 
 .parties-container .btn-secondary {
