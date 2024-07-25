@@ -33,7 +33,7 @@ const Party = () => {
   // Delete this party
   const handleDelete = async () => {
     try {
-      const res = await partyFetch.delete(`/parties/${id}`);
+      const res = await partyFetch.delete(`/parties/${party._id}`);
 
       if (res.status === 200) {
         navigate("/");
@@ -51,7 +51,9 @@ const Party = () => {
     <div className="party">
       <h1>{party.title}</h1>
       <div className="actions-container">
-        <Link className="btn">Editar</Link>
+        <Link to={`/party/edit/${id}`} className="btn">
+          Editar
+        </Link>
         <button className="btn-secondary" onClick={handleDelete}>
           Excluir
         </button>
