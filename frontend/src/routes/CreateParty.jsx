@@ -40,7 +40,7 @@ const CreateParty = () => {
     loadServices();
   }, []);
 
-  // Create services array
+  // Add or remove services
   const handleServices = (e) => {
     const checked = e.target.checked;
     const value = e.target.value;

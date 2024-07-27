@@ -33,7 +33,7 @@ const Party = () => {
   // Delete this party
   const handleDelete = async () => {
     try {
-      const res = await partyFetch.delete(`/parties/${party._id}`);
+      const res = await partyFetch.delete(`/parties/${id}`);
 
       if (res.status === 200) {
         navigate("/");
