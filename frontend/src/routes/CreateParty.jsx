@@ -17,7 +17,7 @@ const CreateParty = () => {
 
   const [description, setDescription] = useState("");
 
-  const [budget, setBudget] = useState(0);
+  const [budget, setBudget] = useState();
 
   const [image, setImage] = useState("");
 

@@ -39,7 +39,8 @@
   resize: none;
 }
 
-.form-page input::placeholder {
+.form-page input::placeholder,
+.form-page textarea::placeholder {
   color: #a4a7b4;
 }
 
@@ -104,4 +105,8 @@
   max-width: 150px;
   margin: 0 auto;
   font-size: 1.2rem;
+}
+
+.party a {
+  font-weight: 400;
 }

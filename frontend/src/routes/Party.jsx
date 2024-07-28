@@ -51,7 +51,7 @@ const Party = () => {
     <div className="party">
       <h1>{party.title}</h1>
       <div className="actions-container">
-        <Link to={`/party/edit/${id}`} className="btn">
+        <Link to={`/party/edit/${id}`} className="btn-secondary">
           Editar
         </Link>
         <button className="btn-secondary" onClick={handleDelete}>
