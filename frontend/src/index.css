@@ -58,9 +58,9 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #343a46;
   color: #fff;
   border: 1px solid #cfcfcf;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .btn-secondary:hover {
-  opacity: 0.8;
+  opacity: 1;
 }

@@ -10,12 +10,17 @@ import Home from "./routes/Home.jsx";
 import CreateParty from "./routes/CreateParty.jsx";
 import Party from "./routes/Party.jsx";
 import EditParty from "./routes/EditParty.jsx";
+import Login from "./routes/Login.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/login",
+        element: <Login />,
+      },
       {
         path: "/",
         element: <Home />,

@@ -72,6 +72,10 @@
   object-fit: cover;
 }
 
+.form-page form h2 {
+  color: #343b57;
+}
+
 .form-page .service {
   max-width: 30%;
   text-align: center;

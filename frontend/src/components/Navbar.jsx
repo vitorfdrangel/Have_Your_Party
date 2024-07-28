@@ -10,6 +10,9 @@ const Navbar = () => {
       <h2>Have Your Party!</h2>
       <ul>
         <li>
+          <NavLink to={"/login"}>Login</NavLink>
+        </li>
+        <li>
           <NavLink to={"/"}>Minhas Festas</NavLink>
         </li>
         <li>

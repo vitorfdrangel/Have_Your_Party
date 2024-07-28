@@ -11,10 +11,9 @@
 
 .parties-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  padding: 0 4rem;
+  padding: 0 7rem;
 }
 
 .parties-container p {
