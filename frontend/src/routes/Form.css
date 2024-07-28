@@ -4,8 +4,9 @@
   margin-bottom: 1rem;
 }
 
-.form-page p {
-  color: #7703fc;
+.form-page p,
+.form-page h2 {
+  color: #eee;
 }
 
 .form-page form {
@@ -42,11 +43,19 @@
   color: #a4a7b4;
 }
 
+.form-page .h2-container {
+  color: #343b57;
+}
+
 .services-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   padding-left: 2.5rem;
+}
+
+.services-container p {
+  color: #343b57;
 }
 
 .services-container .service {
@@ -91,7 +100,7 @@
   color: #747990;
 }
 
-.form-page .btn {
+.form-page .btn-secondary {
   max-width: 150px;
   margin: 0 auto;
   font-size: 1.2rem;

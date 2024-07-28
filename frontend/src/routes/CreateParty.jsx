@@ -134,7 +134,7 @@ const CreateParty = () => {
           />
         </label>
         <div>
-          <h2>Escolha os serviços</h2>
+          <h2 className="h2-container">Escolha os serviços</h2>
           <div className="services-container">
             {services.length === 0 && <p>Carregando...</p>}
             {services.length != 0 &&
@@ -155,7 +155,7 @@ const CreateParty = () => {
               ))}
           </div>
         </div>
-        <input type="submit" value="Criar Festa" className="btn" />
+        <input type="submit" value="Criar Festa" className="btn-secondary" />
       </form>
     </div>
   );

@@ -162,7 +162,7 @@ const EditParty = () => {
               ))}
           </div>
         </div>
-        <input type="submit" value="Editar Festa" className="btn" />
+        <input type="submit" value="Editar Festa" className="btn-secondary" />
       </form>
     </div>
   );

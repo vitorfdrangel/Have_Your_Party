@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f5f6fa;
+  background-color: #1b1e23;
 }
 
 ul {
@@ -17,18 +17,19 @@ ul {
 
 a {
   font-size: 1rem;
-  color: #283252;
+  color: #eee;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.4s;
 }
 
 p {
-  color: #747990;
+  color: #283252;
 }
 
 .btn,
 .btn-secondary {
-  background-color: #7703fc;
+  background-color: #343a46;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -38,11 +39,17 @@ p {
 }
 
 .btn:hover {
-  opacity: 0.8;
+  background-color: #eee;
+  color: #343a46;
 }
 
 .btn-secondary {
-  background-color: #fff;
-  color: #283252;
+  background-color: #343a46;
+  color: #fff;
   border: 1px solid #cfcfcf;
+  opacity: 0.8;
+}
+
+.btn-secondary:hover {
+  opacity: 1;
 }

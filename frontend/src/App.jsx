@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 
 // Components
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import { ToastContainer } from "react-toastify";
 
@@ -15,6 +16,7 @@ function App() {
       <ToastContainer />
       <Navbar />
       <Outlet />
+      <Footer />
     </div>
   );
 }

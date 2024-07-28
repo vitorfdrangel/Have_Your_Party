@@ -1,15 +1,14 @@
 #navbar {
-  background-color: #eee;
+  background-color: #2d3136;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 3rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #e4e4e4;
 }
 
 #navbar h2 {
-  color: #7703fc;
+  color: #eee;
   font-weight: 900;
 }
 
