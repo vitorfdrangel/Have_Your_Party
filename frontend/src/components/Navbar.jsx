@@ -10,10 +10,10 @@ const Navbar = () => {
       <h2>Have Your Party!</h2>
       <ul>
         <li>
-          <NavLink to={"/login"}>Login</NavLink>
+          <NavLink to={"/"}>Início / Login</NavLink>
         </li>
         <li>
-          <NavLink to={"/"}>Minhas Festas</NavLink>
+          <NavLink to={"/parties"}>Minhas Festas</NavLink>
         </li>
         <li>
           <NavLink to={"/party/new"} className="btn">

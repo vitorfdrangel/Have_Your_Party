@@ -1,0 +1,90 @@
+.login-container {
+  background-color: #f7f7f7;
+  max-width: 1300px;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 12px;
+}
+
+.left-container {
+  padding: 4rem 12rem;
+  text-align: center;
+}
+
+.left-container h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.left-container p {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.login-container img {
+  max-width: 450px;
+}
+
+.form-container {
+  background-color: #343a46;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+}
+.form-container h2 {
+  text-align: center;
+  color: #eee;
+}
+
+.form-input label {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input label span {
+  color: #eee;
+  margin-bottom: 6px;
+}
+
+.form-input label input {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  outline: none;
+}
+
+.form-input label input::placeholder {
+  color: #a4a7b4;
+}
+
+.form-container a {
+  font-size: 12px;
+  color: #a4a7b4;
+}
+
+.form-container .btn {
+  background-color: #eee;
+  width: 100%;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #343a46;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.form-container .btn:hover {
+  opacity: 1;
+}
+
+.form-container #create-acc,
+.form-container #create-acc a {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #eee;
+  text-align: end;
+}

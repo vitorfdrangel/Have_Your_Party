@@ -36,7 +36,7 @@ const Party = () => {
       const res = await partyFetch.delete(`/parties/${id}`);
 
       if (res.status === 200) {
-        navigate("/");
+        navigate("/parties");
 
         useToast(res.data.msg);
       }

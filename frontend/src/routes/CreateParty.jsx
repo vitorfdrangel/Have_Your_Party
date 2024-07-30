@@ -70,7 +70,7 @@ const CreateParty = () => {
       const res = await partyFetch.post("/parties", party);
 
       if (res.status === 201) {
-        navigate("/");
+        navigate("/parties");
 
         useToast(res.data.msg);
       }

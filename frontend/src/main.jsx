@@ -6,11 +6,13 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // pages
-import Home from "./routes/Home.jsx";
+import Login from "./routes/Login.jsx";
+import MyParties from "./routes/MyParties.jsx";
 import CreateParty from "./routes/CreateParty.jsx";
 import Party from "./routes/Party.jsx";
 import EditParty from "./routes/EditParty.jsx";
-import Login from "./routes/Login.jsx";
+import ForgotPass from "./routes/ForgotPass.jsx";
+import CreateAcc from "./routes/CreateAcc.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,12 +20,12 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/login",
+        path: "/",
         element: <Login />,
       },
       {
-        path: "/",
-        element: <Home />,
+        path: "/parties",
+        element: <MyParties />,
       },
       {
         path: "/party/new",
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
       {
         path: "/party/edit/:id",
         element: <EditParty />,
+      },
+      {
+        path: "/login/forgot-pass",
+        element: <ForgotPass />,
+      },
+      {
+        path: "/login/create",
+        element: <CreateAcc />,
       },
     ],
   },
