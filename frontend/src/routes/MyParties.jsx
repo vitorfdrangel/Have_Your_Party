@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 import "./MyParties.css";
 
-const Home = () => {
+const MyParties = () => {
   const [parties, setParties] = useState(null);
 
   // Load Parties
@@ -45,4 +45,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default MyParties;
