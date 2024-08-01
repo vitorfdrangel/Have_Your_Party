@@ -1,9 +1,11 @@
 .footer-container {
   background-color: #2d3136;
-  margin-top: 22rem;
+  width: 100%;
   padding: 1.5rem;
   text-align: center;
   font-size: 12px;
+  position: relative;
+  top: 22rem;
 }
 
 .footer-container p {

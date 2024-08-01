@@ -21,12 +21,11 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    console.log(user, password);
-
     if (user && password) {
       navigate("/parties");
     }
   };
+
   return (
     <div className="login-container">
       <div className="left-container">
