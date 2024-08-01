@@ -1,8 +1,8 @@
 .forgot-pass {
   background-color: #f7f7f7;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 4rem 6rem;
+  max-width: 550px;
+  margin: 5rem auto;
+  padding: 3rem 6rem;
   text-align: center;
 }
 
@@ -17,16 +17,28 @@
   margin-bottom: 1rem;
 }
 
-.forgot-pass input {
+.forgot-pass label {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+}
+
+.forgot-pass span {
+  font-weight: bold;
+}
+
+.forgot-pass input {
   width: 100%;
 }
 
 .forgot-pass input[type="email"] {
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid #cfcfcf;
-  outline: none;
   margin-bottom: 2rem;
+  outline: none;
+}
+
+.forgot-pass input[type="text"]::placeholder {
+  color: #a4a7b4;
 }
