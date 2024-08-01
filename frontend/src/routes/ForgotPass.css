@@ -1,0 +1,32 @@
+.forgot-pass {
+  background-color: #f7f7f7;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 4rem 6rem;
+  text-align: center;
+}
+
+.forgot-pass h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.forgot-pass p {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.forgot-pass input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.forgot-pass input[type="email"] {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  outline: none;
+  margin-bottom: 2rem;
+}
