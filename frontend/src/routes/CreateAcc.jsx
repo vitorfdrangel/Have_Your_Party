@@ -48,6 +48,15 @@ const CreateAcc = () => {
           />
           <p id="city">ex: Rio de Janeiro, Brasil</p>
         </label>
+        <label>
+          <span>E-mail</span>
+          <input
+            type="email"
+            placeholder="Digite seu e-mail"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+        </label>
         <div className="radio-container">
           <p>Selecione seu gênero</p>
           <label>
@@ -64,15 +73,6 @@ const CreateAcc = () => {
             <span>Feminino</span>
           </label>
         </div>
-        <label>
-          <span>E-mail</span>
-          <input
-            type="email"
-            placeholder="Digite seu e-mail"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-          />
-        </label>
         <input type="submit" value="Criar conta" className="btn-secondary" />
       </form>
     </div>
