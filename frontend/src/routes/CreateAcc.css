@@ -1,0 +1,49 @@
+.create-acc {
+  background-color: #f7f7f7;
+  max-width: 550px;
+  margin: 5rem auto;
+  padding: 3rem 6rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.create-acc h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.create-acc p {
+  margin-bottom: 1rem;
+}
+
+.create-acc label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.create-acc label span {
+  font-weight: bold;
+  text-align: start;
+}
+
+.create-acc input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 2rem;
+}
+
+.create-acc label input::placeholder {
+  color: #a4a7b4;
+}
+
+.create-acc label #city {
+  font-size: 12px;
+  color: #a4a7b4;
+  text-align: start;
+  position: relative;
+  top: -1.9rem;
+  left: 10px;
+}

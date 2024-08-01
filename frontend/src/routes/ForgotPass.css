@@ -3,6 +3,7 @@
   max-width: 550px;
   margin: 5rem auto;
   padding: 3rem 6rem;
+  border-radius: 12px;
   text-align: center;
 }
 
@@ -31,12 +32,16 @@
   width: 100%;
 }
 
-.forgot-pass input[type="email"] {
+.forgot-pass label input {
   padding: 0.5rem 1rem;
-  border-radius: 6px;
   border: 1px solid #cfcfcf;
-  margin-bottom: 2rem;
+  border-radius: 5px;
   outline: none;
+  margin-bottom: 2rem;
+}
+
+.forgot-pass label input::placeholder {
+  color: #a4a7b4;
 }
 
 .forgot-pass input[type="text"]::placeholder {

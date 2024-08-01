@@ -43,6 +43,8 @@ const Login = () => {
                 type="text"
                 placeholder="Digite o nome de usuário"
                 onChange={(e) => setUser(e.target.value)}
+                minLength={4}
+                maxLength={10}
                 required
               />
             </label>
@@ -52,6 +54,8 @@ const Login = () => {
                 type="password"
                 placeholder="Digite sua senha"
                 onChange={(e) => setPassword(e.target.value)}
+                minLength={8}
+                maxLength={16}
                 required
               />
             </label>
