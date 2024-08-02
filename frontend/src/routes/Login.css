@@ -62,15 +62,17 @@
   color: #a4a7b4;
 }
 
+.form-container p,
 .form-container a {
   font-size: 12px;
+  margin: -6px 0 0 4px;
   color: #a4a7b4;
 }
 
 .form-container .btn {
   background-color: #eee;
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 1.8rem;
   font-weight: bold;
   color: #343a46;
   opacity: 0.8;

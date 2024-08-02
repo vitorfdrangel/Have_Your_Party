@@ -40,7 +40,7 @@
 }
 
 .create-acc label #city {
-  font-size: 12px;
+  font-size: 10px;
   color: #a4a7b4;
   text-align: start;
   position: relative;
@@ -73,4 +73,12 @@
 .create-acc .btn-secondary {
   width: 100%;
   margin-top: 1rem;
+}
+
+.create-acc #to-login,
+.create-acc #to-login a {
+  margin-top: -4px;
+  font-size: 14px;
+  color: #82848b;
+  text-align: end;
 }

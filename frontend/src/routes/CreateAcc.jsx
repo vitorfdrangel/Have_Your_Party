@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import useToast from "../hook/useToast";
 
@@ -92,6 +92,9 @@ const CreateAcc = () => {
         </label>
         <input type="submit" value="Criar conta" className="btn-secondary" />
       </form>
+      <p id="to-login">
+        Já possui uma conta? <Link to={"/"}>faça login</Link>
+      </p>
     </div>
   );
 };
