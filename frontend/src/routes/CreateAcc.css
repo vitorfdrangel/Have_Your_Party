@@ -32,7 +32,7 @@
   border: 1px solid #cfcfcf;
   border-radius: 5px;
   outline: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
 }
 
 .create-acc label input::placeholder {
@@ -44,6 +44,33 @@
   color: #a4a7b4;
   text-align: start;
   position: relative;
-  top: -1.9rem;
+  top: -1.2rem;
   left: 10px;
+}
+
+.create-acc .radio-container p {
+  margin-top: -1rem;
+  text-align: start;
+  font-weight: bold;
+}
+
+.radio-container .radio-input {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.radio-container .radio-input label {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.radio-container .radio-input input {
+  margin-top: 0.3rem;
+}
+
+.create-acc .btn-secondary {
+  width: 100%;
+  margin-top: 1rem;
 }

@@ -8,12 +8,16 @@ import "./CreateAcc.css";
 
 const CreateAcc = () => {
   const [name, setName] = useState("");
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState(null);
   const [city, setCity] = useState("");
   const [gender, setGender] = useState("");
   const [email, setEmail] = useState("");
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log(name, date, city, email, gender);
+  };
 
   return (
     <div className="create-acc">
@@ -48,6 +52,35 @@ const CreateAcc = () => {
           />
           <p id="city">ex: Rio de Janeiro, Brasil</p>
         </label>
+        <div className="radio-container">
+          <p>Selecione seu gênero</p>
+          <div className="radio-input">
+            <label>
+              <input
+                type="radio"
+                name="gender"
+                id="masculino"
+                value="Masculino"
+                onChange={(e) => {
+                  e.target.checked && setGender("Masculino");
+                }}
+              />
+              <span>Masculino</span>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="gender"
+                id="feminino"
+                value="Feminino"
+                onChange={(e) => {
+                  e.target.checked && setGender("Feminino");
+                }}
+              />
+              <span>Feminino</span>
+            </label>
+          </div>
+        </div>
         <label>
           <span>E-mail</span>
           <input
@@ -57,22 +90,6 @@ const CreateAcc = () => {
             value={email}
           />
         </label>
-        <div className="radio-container">
-          <p>Selecione seu gênero</p>
-          <label>
-            <input
-              type="radio"
-              name="gender"
-              id="masculino"
-              value="Masculino"
-            />
-            <span>Masculino</span>
-          </label>
-          <label>
-            <input type="radio" name="gender" id="feminino" value="Feminino" />
-            <span>Feminino</span>
-          </label>
-        </div>
         <input type="submit" value="Criar conta" className="btn-secondary" />
       </form>
     </div>
