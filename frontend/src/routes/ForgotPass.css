@@ -1,0 +1,49 @@
+.forgot-pass {
+  background-color: #f7f7f7;
+  max-width: 550px;
+  margin: 5rem auto;
+  padding: 3rem 6rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.forgot-pass h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.forgot-pass p {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.forgot-pass label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.forgot-pass span {
+  font-weight: bold;
+}
+
+.forgot-pass input {
+  width: 100%;
+}
+
+.forgot-pass label input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 2rem;
+}
+
+.forgot-pass label input::placeholder {
+  color: #a4a7b4;
+}
+
+.forgot-pass input[type="text"]::placeholder {
+  color: #a4a7b4;
+}

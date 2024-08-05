@@ -13,6 +13,19 @@ import "./Login.css";
 import image from "../images/party-image.png";
 
 const Login = () => {
+  const [user, setUser] = useState();
+  const [password, setPassword] = useState();
+
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    if (user && password) {
+      navigate("/parties");
+    }
+  };
+
   return (
     <div className="login-container">
       <div className="left-container">
@@ -22,19 +35,29 @@ const Login = () => {
       </div>
       <div className="form-container">
         <h2>Login</h2>
-        <form>
+        <form onSubmit={(e) => handleLogin(e)}>
           <div className="form-input">
             <label>
               <span>Usuário</span>
               <input
                 type="text"
                 placeholder="Digite o nome de usuário"
+                onChange={(e) => setUser(e.target.value)}
+                minLength={4}
+                maxLength={10}
                 required
               />
             </label>
             <label>
               <span>Senha</span>
-              <input type="password" placeholder="Digite sua senha" required />
+              <input
+                type="password"
+                placeholder="Digite sua senha"
+                onChange={(e) => setPassword(e.target.value)}
+                minLength={8}
+                maxLength={16}
+                required
+              />
             </label>
           </div>
           <p>

@@ -1,0 +1,84 @@
+.create-acc {
+  background-color: #f7f7f7;
+  max-width: 550px;
+  margin: 5rem auto 2.5rem;
+  padding: 3rem 6rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.create-acc h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.create-acc p {
+  margin-bottom: 1rem;
+}
+
+.create-acc label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.create-acc label span {
+  font-weight: bold;
+  text-align: start;
+}
+
+.create-acc input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 1.2rem;
+}
+
+.create-acc label input::placeholder {
+  color: #a4a7b4;
+}
+
+.create-acc label #city {
+  font-size: 10px;
+  color: #a4a7b4;
+  text-align: start;
+  position: relative;
+  top: -1.2rem;
+  left: 10px;
+}
+
+.create-acc .radio-container p {
+  margin-top: -1rem;
+  text-align: start;
+  font-weight: bold;
+}
+
+.radio-container .radio-input {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.radio-container .radio-input label {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.radio-container .radio-input input {
+  margin-top: 0.3rem;
+}
+
+.create-acc .btn-secondary {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.create-acc #to-login,
+.create-acc #to-login a {
+  margin-top: -4px;
+  font-size: 14px;
+  color: #82848b;
+  text-align: end;
+}
