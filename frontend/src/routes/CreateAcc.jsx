@@ -1,3 +1,5 @@
+import partyFetch from "../axios/config";
+
 import { useState, useEffect } from "react";
 
 import { useNavigate, Link } from "react-router-dom";
@@ -8,6 +10,7 @@ import "./CreateAcc.css";
 
 const CreateAcc = () => {
   const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
   const [date, setDate] = useState(null);
   const [city, setCity] = useState("");
   const [gender, setGender] = useState("");
@@ -16,7 +19,26 @@ const CreateAcc = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(name, date, city, email, gender);
+    const createAccount = async () => {
+      try {
+        const newAcc = {
+          name,
+          password,
+          date,
+          city,
+          gender,
+          email,
+        };
+
+        const response = await partyFetch.post("/user/create", newAcc);
+
+        console.log(response);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    createAccount();
   };
 
   return (
@@ -25,7 +47,7 @@ const CreateAcc = () => {
       <p>Junte-se a nós e faça do seu evento uma lembrança extraordinária!</p>
       <form onSubmit={(e) => handleSubmit(e)}>
         <label>
-          <span>Nome</span>
+          <span>Nome de usuário</span>
           <input
             type="text"
             placeholder="Digite seu nome"
@@ -35,11 +57,22 @@ const CreateAcc = () => {
           />
         </label>
         <label>
+          <span>Senha</span>
+          <input
+            type="password"
+            placeholder="Digite sua senha"
+            required
+            onChange={(e) => setPassword(e.target.value)}
+            value={password}
+          />
+        </label>
+        <label>
           <span>Data de nascimento</span>
           <input
             type="date"
             required
             onChange={(e) => setDate(e.target.value)}
+            value={date || ""}
           />
         </label>
         <label>
@@ -47,6 +80,7 @@ const CreateAcc = () => {
           <input
             type="text"
             placeholder="Digite sua localização"
+            required
             onChange={(e) => setCity(e.target.value)}
             value={city}
           />
@@ -58,6 +92,7 @@ const CreateAcc = () => {
             <label>
               <input
                 type="radio"
+                required
                 name="gender"
                 id="masculino"
                 value="Masculino"
@@ -70,6 +105,7 @@ const CreateAcc = () => {
             <label>
               <input
                 type="radio"
+                required
                 name="gender"
                 id="feminino"
                 value="Feminino"
@@ -85,6 +121,7 @@ const CreateAcc = () => {
           <span>E-mail</span>
           <input
             type="email"
+            required
             placeholder="Digite seu e-mail"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
