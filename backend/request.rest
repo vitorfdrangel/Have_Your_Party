@@ -88,3 +88,19 @@ Content-Type: application/json
     }
 ]
 }
+
+###
+POST http://localhost:3000/api/user/create
+Content-Type: application/json
+
+{
+        "name": "Vitor Rangel",
+        "password": "vasco98",
+        "date": "1998-08-03",
+        "city": "Nova Iguaçu",
+        "gender": "Masculino",
+        "email": "Vitorrangel@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/user
