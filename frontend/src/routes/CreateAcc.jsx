@@ -20,7 +20,7 @@ const CreateAcc = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     const createAccount = async () => {
       try {
         const newAcc = {
@@ -39,7 +39,6 @@ const CreateAcc = () => {
 
           useToast(res.data.msg);
         }
-        console.log(res);
       } catch (error) {
         console.log(error);
       }
@@ -57,7 +56,7 @@ const CreateAcc = () => {
           <span>Nome de usuário</span>
           <input
             type="text"
-            placeholder="Digite seu nome"
+            placeholder="ex: Vitor98"
             required
             onChange={(e) => setName(e.target.value)}
             value={name}
