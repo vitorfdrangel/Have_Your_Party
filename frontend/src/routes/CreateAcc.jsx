@@ -20,7 +20,7 @@ const CreateAcc = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     const createAccount = async () => {
       try {
         const newAcc = {
