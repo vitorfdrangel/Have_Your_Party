@@ -1,6 +1,6 @@
 import partyFetch from "../axios/config";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { useNavigate, Link } from "react-router-dom";
 
@@ -16,6 +16,8 @@ const CreateAcc = () => {
   const [gender, setGender] = useState("");
   const [email, setEmail] = useState("");
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -30,9 +32,14 @@ const CreateAcc = () => {
           email,
         };
 
-        const response = await partyFetch.post("/user/create", newAcc);
+        const res = await partyFetch.post("/user/create", newAcc);
 
-        console.log(response);
+        if (res.status === 201) {
+          navigate("/");
+
+          useToast(res.data.msg);
+        }
+        console.log(res);
       } catch (error) {
         console.log(error);
       }
