@@ -30,4 +30,4 @@ const userController = {
   },
 };
 
-module.exports = partyController;
+module.exports = userController;
