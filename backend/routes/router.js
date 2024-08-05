@@ -10,4 +10,9 @@ const partyRouter = require("./parties");
 
 router.use("/", partyRouter);
 
+// User router
+const userRouter = require("./users");
+
+router.use("/", userRouter);
+
 module.exports = router;

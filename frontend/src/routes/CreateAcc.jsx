@@ -16,7 +16,7 @@ const CreateAcc = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(name, date, city, email, gender);
+    console.log(name, date, city, gender, email);
   };
 
   return (
