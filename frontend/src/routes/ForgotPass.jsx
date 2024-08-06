@@ -18,7 +18,7 @@ const ForgotPass = () => {
 
   return (
     <div className="forgot-pass">
-      <h2>Redefinição de senha!</h2>
+      <h2>Redefinição de senha</h2>
       <p>
         Informe seu email e enviaremos um link para a recuperação da sua senha
       </p>

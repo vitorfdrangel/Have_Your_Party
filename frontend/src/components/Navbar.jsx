@@ -10,13 +10,8 @@ const Navbar = () => {
       <h2>Have Your Party!</h2>
       <ul>
         <li>
-          <Link>Home / Login</Link>
+          <Link to={"/"}>Home / Login</Link>
         </li>
-        {1 > 0 && (
-          <li>
-            <Link to={"/parties"}>Minhas Festas</Link>
-          </li>
-        )}
         <li>
           <NavLink to={"/party/new"} className="btn">
             Criar Festa

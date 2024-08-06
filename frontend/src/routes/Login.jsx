@@ -16,13 +16,36 @@ const Login = () => {
   const [user, setUser] = useState();
   const [password, setPassword] = useState();
 
+  const [userData, setUserData] = useState({});
+
   const navigate = useNavigate();
+
+  // Load Users
+  const getUser = async () => {
+    try {
+      const res = await partyFetch.get("/user");
+
+      setUserData(res.data[0]);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getUser();
+  }, []);
+
+  console.log(userData.password);
 
   const handleLogin = (e) => {
     e.preventDefault();
 
-    if (user && password) {
+    if (!userData) return;
+
+    if (user === userData.name && password === userData.password) {
       navigate("/parties");
+    } else {
+      useToast("Usuário e/ou senha inválido(s)", "error");
     }
   };
 
@@ -54,7 +77,7 @@ const Login = () => {
                 type="password"
                 placeholder="Digite sua senha"
                 onChange={(e) => setPassword(e.target.value)}
-                minLength={8}
+                minLength={6}
                 maxLength={16}
                 required
               />
