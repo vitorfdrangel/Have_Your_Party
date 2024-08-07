@@ -32,7 +32,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    if (!dataUser) {
+    if (!dataUser.user || !dataUser.password) {
       navigate("/");
     }
   }, []);
@@ -41,28 +41,28 @@ const Navbar = () => {
     <nav id="navbar">
       <h2>Have Your Party!</h2>
       <ul>
-        {dataUser !== userData.name && (
+        {(dataUser.password !== userData.password ||
+          dataUser.user !== userData.name) && (
           <li>
             <Link to={"/"}>Home / Login</Link>
           </li>
         )}
-        {dataUser === userData.name && (
-          <li>
-            <p>Bem-vindo, {dataUser}</p>
-          </li>
-        )}
-        {dataUser === userData.name && (
-          <li>
-            <NavLink to={"/parties"}>Minhas Festas</NavLink>
-          </li>
-        )}
-        {dataUser === userData.name && (
-          <li>
-            <NavLink to={"/party/new"} className="btn">
-              Criar Festa
-            </NavLink>
-          </li>
-        )}
+        {dataUser.password === userData.password &&
+          dataUser.user === userData.name && (
+            <div className="welcome-container">
+              <li>
+                <p>Bem-vindo, {dataUser.user}</p>
+              </li>
+              <li>
+                <NavLink to={"/parties"}>Minhas Festas</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/party/new"} className="btn">
+                  Criar Festa
+                </NavLink>
+              </li>
+            </div>
+          )}
       </ul>
     </nav>
   );

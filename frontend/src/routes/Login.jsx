@@ -43,7 +43,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    setDataUser(user);
+    setDataUser({ user, password });
 
     if (!userData) return;
 

@@ -17,6 +17,12 @@
   align-items: center;
 }
 
+.welcome-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
 #navbar p {
   color: #eee;
   font-weight: bold;
