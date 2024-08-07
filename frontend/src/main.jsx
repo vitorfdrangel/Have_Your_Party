@@ -5,6 +5,8 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import { UserContextProvider } from "./context/UserContext.jsx";
+
 // pages
 import Login from "./routes/Login.jsx";
 import MyParties from "./routes/MyParties.jsx";
@@ -53,6 +55,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <UserContextProvider>
+      <RouterProvider router={router} />
+    </UserContextProvider>
   </React.StrictMode>
 );
