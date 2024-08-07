@@ -128,7 +128,6 @@ const CreateParty = () => {
           <input
             type="text"
             placeholder="Insira a URL de uma imagem"
-            required
             onChange={(e) => setImage(e.target.value)}
             value={image}
           />
