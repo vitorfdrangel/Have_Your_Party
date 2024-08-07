@@ -1,10 +1,13 @@
 import partyFetch from "../axios/config";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 
 import { useNavigate, Link } from "react-router-dom";
 
 import useToast from "../hook/useToast";
+
+// Context
+import { UserContext } from "../context/UserContext";
 
 // Styles
 import "./Login.css";
@@ -13,6 +16,8 @@ import "./Login.css";
 import image from "../images/party-image.png";
 
 const Login = () => {
+  const { dataUser, setDataUser } = useContext(UserContext);
+
   const [user, setUser] = useState();
   const [password, setPassword] = useState();
 
@@ -35,10 +40,10 @@ const Login = () => {
     getUser();
   }, []);
 
-  console.log(userData.password);
-
   const handleLogin = (e) => {
     e.preventDefault();
+
+    setDataUser(user);
 
     if (!userData) return;
 
