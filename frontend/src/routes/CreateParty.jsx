@@ -19,7 +19,7 @@ const CreateParty = () => {
 
   const [budget, setBudget] = useState();
 
-  const [image, setImage] = useState("");
+  const [image, setImage] = useState(null);
 
   const [partyServices, setPartyServices] = useState([]);
 
@@ -56,6 +56,8 @@ const CreateParty = () => {
   // Create a new party
   const createParty = async (e) => {
     e.preventDefault();
+
+    console.log(image);
 
     try {
       const party = {
@@ -126,9 +128,8 @@ const CreateParty = () => {
         <label>
           <span>Imagem:</span>
           <input
-            type="text"
-            placeholder="Insira a URL de uma imagem"
-            required
+            type="file"
+            accept="image/*"
             onChange={(e) => setImage(e.target.value)}
             value={image}
           />
