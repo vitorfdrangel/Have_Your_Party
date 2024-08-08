@@ -27,3 +27,26 @@
   color: #eee;
   font-weight: bold;
 }
+
+/* Mobile */
+@media (max-width: 450px) {
+  #navbar {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.6rem 1.2rem 0.8rem;
+  }
+
+  #navbar h2 {
+    font-size: 2rem;
+  }
+
+  .welcome-container {
+    gap: 1.4rem;
+    font-size: 0.8rem;
+  }
+
+  #navbar p {
+    font-size: 0.9rem;
+  }
+}

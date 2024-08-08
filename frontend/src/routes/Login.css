@@ -90,3 +90,43 @@
   color: #eee;
   text-align: end;
 }
+
+/* Mobile */
+@media (max-width: 450px) {
+  .login-container {
+    max-width: 350px;
+    margin: 3rem auto;
+  }
+
+  .left-container {
+    display: none;
+  }
+
+  .form-container {
+    padding: 3rem 2.5rem;
+  }
+
+  .form-input label span {
+    font-size: 0.9rem;
+    color: #eee;
+    margin-bottom: 6px;
+  }
+
+  .form-input label input {
+    padding: 0.5rem 1rem;
+  }
+
+  .form-input label input::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .form-container p,
+  .form-container a {
+    font-size: 11px;
+  }
+
+  .form-container #create-acc,
+  .form-container #create-acc a {
+    font-size: 13px;
+  }
+}

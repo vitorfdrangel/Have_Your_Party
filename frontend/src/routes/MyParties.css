@@ -44,3 +44,33 @@
   max-width: 120px;
   text-align: center;
 }
+
+/* Mobile */
+@media (max-width: 450px) {
+  .parties-container p,
+  .loading {
+    font-size: 0.8rem;
+  }
+
+  .home h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .parties-container {
+    gap: 2rem;
+    padding: 0 4rem;
+  }
+
+  .parties-container .party img {
+    height: 230px;
+  }
+
+  .parties-container .party h3 {
+    margin-bottom: 0.3rem;
+  }
+
+  .parties-container .btn-secondary {
+    margin: 0 auto;
+  }
+}
