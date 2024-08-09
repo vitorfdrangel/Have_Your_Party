@@ -82,3 +82,47 @@
   color: #82848b;
   text-align: end;
 }
+
+/* Mobile */
+@media (max-width: 450px) {
+  .create-acc {
+    max-width: 350px;
+    margin: 2.5rem auto;
+    padding: 1.6rem 2.2rem;
+  }
+
+  .create-acc h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .create-acc label span {
+    font-size: 0.9rem;
+  }
+
+  .create-acc input {
+    margin-bottom: 1rem;
+  }
+
+  .create-acc label input::placeholder {
+    font-size: 12px;
+  }
+
+  .create-acc label #city {
+    top: -1rem;
+  }
+
+  .create-acc .radio-container p {
+    margin-top: -1.2rem;
+  }
+
+  .radio-container .radio-input input {
+    margin-top: 0.2rem;
+  }
+
+  .create-acc #to-login,
+  .create-acc #to-login a {
+    margin-top: -8px;
+    font-size: 13px;
+  }
+}

@@ -8,7 +8,7 @@
 .form-page form {
   background-color: #f7f7f7;
   max-width: 1000px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2rem;
   padding: 2rem;
   border: 1px solid #cfcfcf;
   border-radius: 12px;
@@ -124,7 +124,8 @@
 
   .form-page form {
     max-width: 350px;
-    padding: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.2rem 0.8rem;
   }
 
   .form-page label {

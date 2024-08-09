@@ -19,11 +19,13 @@
 
 .welcome-container {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
 #navbar p {
+  font-size: 15px;
+  margin-top: 2px;
   color: #eee;
   font-weight: bold;
 }
@@ -47,6 +49,7 @@
   }
 
   #navbar p {
+    margin-top: 1px;
     font-size: 0.9rem;
   }
 }
