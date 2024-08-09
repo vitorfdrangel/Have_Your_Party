@@ -7,3 +7,5 @@
 ##### Depois de criada verifique se está tudo de acordo, senão você pode editar as informações clicando em "Editar".
 
 ##### Caso prefira criar do zero, clique em "Excluir" e refaça o processo de criação.
+
+## Aproveite a sua festa!
