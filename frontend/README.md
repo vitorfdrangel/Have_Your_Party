@@ -1,8 +1,9 @@
-# React + Vite
+# Have Your Party
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Crie seu evento do seu jeito!
 
-Currently, two official plugins are available:
+##### Faça login e tenha acesso às suas festas. Se ainda não tiver uma conta cadastrada, sem problemas, clique em "Criar festa" e faça um evento com a sua cara.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##### Depois de criada verifique se está tudo de acordo, senão você pode editar as informações clicando em "Editar".
+
+##### Caso prefira criar do zero, clique em "Excluir" e refaça o processo de criação.
