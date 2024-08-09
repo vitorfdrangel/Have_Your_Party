@@ -129,7 +129,7 @@ const CreateParty = () => {
           <span>Imagem:</span>
           <input
             type="text"
-            placeholder="Digite a URL da imagem"
+            placeholder="Insira a URL de uma imagem"
             onChange={(e) => setImage(e.target.value)}
             value={image}
           />
