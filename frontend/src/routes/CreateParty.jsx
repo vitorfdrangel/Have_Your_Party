@@ -57,6 +57,8 @@ const CreateParty = () => {
   const createParty = async (e) => {
     e.preventDefault();
 
+    console.log(image);
+
     try {
       const party = {
         title,

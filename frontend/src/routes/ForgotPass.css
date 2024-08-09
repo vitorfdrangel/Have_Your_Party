@@ -44,6 +44,29 @@
   color: #a4a7b4;
 }
 
-.forgot-pass input[type="text"]::placeholder {
-  color: #a4a7b4;
+/* Mobile */
+@media (max-width: 450px) {
+  .forgot-pass {
+    max-width: 350px;
+    margin: 3rem auto 5rem;
+    padding: 2rem;
+  }
+
+  .forgot-pass h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .forgot-pass p {
+    width: 260px;
+    margin-bottom: 0.8rem;
+  }
+
+  .forgot-pass label {
+    gap: 0.3rem;
+  }
+
+  .forgot-pass label input::placeholder {
+    font-size: 12px;
+  }
 }

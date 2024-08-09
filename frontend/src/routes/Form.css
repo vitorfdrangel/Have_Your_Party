@@ -2,17 +2,13 @@
 .form-page p {
   text-align: center;
   margin-bottom: 1rem;
-}
-
-.form-page p,
-.form-page h2 {
   color: #eee;
 }
 
 .form-page form {
   background-color: #f7f7f7;
   max-width: 1000px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2rem;
   padding: 2rem;
   border: 1px solid #cfcfcf;
   border-radius: 12px;
@@ -113,4 +109,94 @@
 
 .party a {
   font-weight: 400;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  .form-page h2 {
+    font-size: 1.4rem;
+    margin: 1.6rem 0 0.6rem;
+  }
+
+  .form-page p {
+    margin-bottom: 1.6rem;
+  }
+
+  .form-page form {
+    max-width: 350px;
+    margin-bottom: 1rem;
+    padding: 1.2rem 0.8rem;
+  }
+
+  .form-page label {
+    width: 90%;
+    margin: 0 auto;
+    gap: 0.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .form-page label span {
+    font-size: 0.9rem;
+  }
+
+  .form-page input::placeholder,
+  .form-page textarea::placeholder {
+    font-size: 12px;
+  }
+
+  .form-page .h2-container {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .services-container p {
+    font-size: 0.9rem;
+  }
+
+  .services-container .service {
+    margin-left: 3px;
+    gap: 0.4rem;
+  }
+
+  .services-container .service img {
+    height: 100px;
+  }
+
+  .form-page form h2 {
+    color: #343b57;
+  }
+
+  .form-page .service {
+    max-width: 30%;
+    text-align: center;
+  }
+
+  .form-page .service-name {
+    font-weight: bold;
+  }
+
+  .form-page .service-price {
+    font-size: 13px;
+  }
+
+  .form-page .checkbox-container p {
+    display: none;
+  }
+
+  .form-page .btn-secondary {
+    max-width: 150px;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  .party a {
+    font-weight: 400;
+  }
 }

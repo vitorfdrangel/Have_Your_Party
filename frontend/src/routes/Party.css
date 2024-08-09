@@ -22,3 +22,29 @@
 .service-party .service img {
   width: 300px;
 }
+
+/* Mobile */
+@media (max-width: 450px) {
+  .party h1 {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .party p {
+    font-size: 14px;
+  }
+
+  .service-party {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .service-party .service {
+    width: 40%;
+  }
+
+  .service-party .service img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
