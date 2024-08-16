@@ -12,4 +12,4 @@
 
 ## Aproveite sua festa!
 
-### Acesse: [Haveyourparty](https://have-your-party-vitor-rangels-projects-4d3973bd.vercel.app/login/create)
+### Acesse: [Haveyourparty](https://have-your-party-ppp1njoxo-vitor-rangels-projects-4d3973bd.vercel.app/)
