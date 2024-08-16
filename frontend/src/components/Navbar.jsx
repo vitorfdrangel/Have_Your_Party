@@ -41,13 +41,15 @@ const Navbar = () => {
     <nav id="navbar">
       <h2>Have Your Party!</h2>
       <ul>
-        {(dataUser.password !== userData.password ||
+        {(dataUser.user === undefined ||
+          dataUser.password !== userData.password ||
           dataUser.user !== userData.name) && (
           <li>
             <Link to={"/"}>Home / Login</Link>
           </li>
         )}
-        {dataUser.password === userData.password &&
+        {dataUser.user !== undefined &&
+          dataUser.password === userData.password &&
           dataUser.user === userData.name && (
             <div className="welcome-container">
               <li>
