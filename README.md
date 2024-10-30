@@ -28,7 +28,7 @@
 
 #### Caso mude de ideia sobre algo, clique em "Editar"
 
-![Captura-de-tela-2024-10-30-143533.png](https://i.postimg.cc/sDPSVkVn/Captura-de-tela-2024-10-30-143533.png)
+![Captura-de-tela-2024-10-30-143533.png](https://i.postimg.cc/j2HWSfrW/Captura-de-tela-2024-10-30-143533.png)
 
 #### Criando sua festa
 
