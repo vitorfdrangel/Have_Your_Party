@@ -90,7 +90,7 @@ const CreateAcc = () => {
             onChange={(e) => setCity(e.target.value)}
             value={city}
           />
-          <p id="city">ex: Rio de Janeiro, Brasil</p>
+          <p id="city">ex: Rio de Janeiro, RJ</p>
         </label>
         <div className="radio-container">
           <p>Selecione seu gênero</p>
