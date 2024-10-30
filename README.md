@@ -32,7 +32,7 @@
 
 #### Criando sua festa
 
-![Captura-de-tela-2024-10-30-151239.png](https://i.postimg.cc/Ssj7RDZn/Captura-de-tela-2024-10-30-151239.png)
+![Captura-de-tela-2024-10-30-151239.png](https://i.postimg.cc/HWq4W0bL/Captura-de-tela-2024-10-30-151239.png)
 
 #### Pronto! Festa criada.
 
