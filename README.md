@@ -1,4 +1,13 @@
 # Have Your Party
+ Projeto criado para prover serviços de promoção de eventos.
+ Foi criado todo o backend com node e express, salvando as informações (dados de usuário e festas criadas) utilizando mongoDB e mongoose. Foi criada uma API para servir os dados ao frontend utilizando o conceito de RestAPI.
+ O frontend do projeto foi criado com react, utilizando boas práticas de programação como clean code.
+ O projeto está hospedado no servidor da vercel. Segue o link: 
+ ## Acesse: [Haveyourparty](https://have-your-party-git-main-vitor-rangels-projects-4d3973bd.vercel.app/).
+ 
+ ### Rodar o projeto
+ Para rodar o projeto basta utilizar o comando "npm run start" para iniciar o servidor.
+ Em seguida, digite no terminal "npm run dev" para abrir a página web gerada com o vite.
 
 ### Crie um evento do seu jeito!
 
@@ -39,5 +48,3 @@
 ![Captura-de-tela-2024-10-30-144057.png](https://i.postimg.cc/bYTC5t1F/Captura-de-tela-2024-10-30-144057.png)
 
 ## Aproveite sua festa!
-
-### Acesse: [Haveyourparty](https://have-your-party-git-main-vitor-rangels-projects-4d3973bd.vercel.app/)
