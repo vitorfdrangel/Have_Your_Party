@@ -7,7 +7,7 @@
  
  
  ### Rodar o projeto
- Para rodar o projeto basta utilizar o comando "npm run start" para iniciar o servidor.
+ Para rodar o projeto basta utilizar o comando "npm run start" para iniciar o servidor. <br>
  Em seguida, digite no terminal "npm run dev" para abrir a página web gerada com o vite.
 
 ### Crie um evento do seu jeito!
